@@ -1,0 +1,99 @@
+import pandas as pd
+from semopy import Model
+import numpy as np
+from semopy.stats import calc_chi2, calc_agfi, calc_aic, calc_bic, calc_cfi, calc_rmsea, calc_gfi, calc_nfi, calc_tli
+from sklearn.preprocessing import StandardScaler
+
+file_path = r"C:\Users\thoma\Desktop\副本问卷数据.xlsx"  
+sheet1_data = pd.read_excel(file_path, sheet_name='sheet1', header=1)
+
+sheet1_data['多大可能购买'] = sheet1_data['多大可能购买'].fillna(0)
+sheet1_data['接触频率'] = sheet1_data['接触频率'].fillna(0) 
+sheet1_data = sheet1_data.apply(pd.to_numeric, errors='coerce')
+sheet1_data = sheet1_data.fillna(0)
+
+
+sheet1_data.replace([np.inf, -np.inf], np.nan, inplace=True)
+sheet1_data.fillna(0, inplace=True)
+
+
+scaler = StandardScaler()
+sheet1_data_standardized = scaler.fit_transform(sheet1_data)
+
+sheet1_data_standardized = pd.DataFrame(sheet1_data_standardized, columns=sheet1_data.columns)
+
+
+model_desc = """
+# 测量模型（定义潜变量和其观测变量的关系）
+有用性 =~ 有用性1 + 有用性2 + 有用性3 + 有用性4
+易用性 =~ 易用性1 + 易用性2 + 易用性3
+风险性 =~ 风险性1 + 风险性2 + 风险性3
+社会 =~ 社会1 + 社会2 + 社会3 + 社会4
+依赖 =~ 依赖1 + 依赖2 + 依赖3
+价值 =~ 价值1 + 价值2 + 价值3
+效能 =~ 效能1 + 效能2 + 效能3
+
+# 结构模型（潜变量之间的关系）
+多大可能购买 ~ 有用性 + 易用性 + 风险性 + 社会 + 依赖 + 价值 + 效能 + 接触频率
+接触频率 ~ 有用性 + 易用性 + 风险性 + 社会 + 依赖 + 价值 + 效能
+"""
+
+model = Model(model_desc)
+result = model.fit(sheet1_data_standardized)
+
+
+loadings = model.inspect()
+fit_indices = model.inspect(mode='list', what='est', information='expected', std_est=False, se_robust=False)
+
+
+chi2, p_value = calc_chi2(model)  
+rmsea = calc_rmsea(model)
+cfi = calc_cfi(model)  
+agfi = calc_agfi(model) 
+aic = calc_aic(model)
+
+
+log_file = "model_output_log.txt"
+with open(log_file, "w") as file:
+    file.write("模型拟合度评估指标：\n")
+    file.write(str(result) + "\n\n")  # 输出拟合的结果，包括拟合度指标
+    
+
+    file.write("每个观测变量的因子载荷：\n")
+    for _, row in loadings.iterrows():
+        if row['rval'] != row['lval']:  # 只输出观测变量与潜变量之间的因子载荷
+            file.write(f"{row['rval']}（观测变量）与{row['lval']}（潜变量）的因子载荷: {row['Estimate']}\n")
+    
+
+    file.write(f"\nChi-squared: {chi2}, p-value: {p_value}\n")
+    file.write(f"RMSEA: {rmsea}\n")
+    file.write(f"CFI: {cfi}\n")
+    file.write(f"AGFI: {agfi}\n")
+    file.write(f"AIC: {aic}\n")
+
+
+    latent_vars = ["有用性", "易用性", "风险性", "社会", "依赖", "价值", "效能"]
+
+    def calculate_cr_and_ave(loadings, latent_vars):
+        cr_ave_dict = {}
+        for var in latent_vars:
+            # 获取每个潜变量对应的观测变量（排除观测变量与自己之间的关系）
+            relevant_loadings = loadings[loadings['lval'] == var]['Estimate'].values
+            squared_loadings = relevant_loadings ** 2
+            # 计算 CR (复合可靠性)，只考虑潜变量和观测变量之间的因子载荷
+            error_variance = 1 - squared_loadings
+            cr = np.sum(squared_loadings) / (np.sum(squared_loadings) + np.sum(error_variance))
+            # 计算 AVE (平均方差提取)，只考虑潜变量和观测变量之间的因子载荷
+            ave = np.sum(squared_loadings) / len(relevant_loadings)
+            cr_ave_dict[var] = {'CR': cr, 'AVE': ave}
+        
+        return cr_ave_dict
+
+    cr_ave = calculate_cr_and_ave(loadings, latent_vars)
+
+    # 输出 CR 和 AVE
+    file.write("\n每个潜变量的 CR 和 AVE：\n")
+    for var in latent_vars:
+        file.write(f"{var} 的 CR: {cr_ave[var]['CR']:.3f}, AVE: {cr_ave[var]['AVE']:.3f}\n")
+
+print(f"统计结果已保存到 {log_file} 文件中")

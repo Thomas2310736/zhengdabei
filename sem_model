@@ -1,0 +1,168 @@
+digraph {
+	rankdir=LR
+	"有用性" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"易用性" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"风险性" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"社会" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"依赖" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"价值" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"效能" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"有用性" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"有用性" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"有用性" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"有用性" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"易用性" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"易用性" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"易用性" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"风险性" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"风险性" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"风险性" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"社会" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"社会" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"社会" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"社会" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"依赖" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"依赖" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"依赖" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"价值" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"价值" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"价值" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"效能" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"效能" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"效能" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"有用性" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"易用性" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"风险性" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"社会" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"依赖" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"价值" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"效能" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"接触频率" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"价值" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"依赖" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"效能" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"依赖" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"接触频率" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"效能" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"依赖" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"易用性" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"价值" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"依赖" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"效能" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"有用性" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"价值" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"依赖" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"效能" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"易用性" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"社会" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"价值" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"依赖" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"效能" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"易用性" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"有用性" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"风险性" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"风险性" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"价值" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"依赖" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"效能" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"易用性" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"有用性" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"价值1" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"价值2" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"价值3" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"依赖1" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"依赖2" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"依赖3" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"多大可能购买" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"效能1" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"效能2" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"效能3" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"易用性1" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"易用性2" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"易用性3" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"有用性1" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"有用性2" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"有用性3" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"有用性4" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"社会1" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"社会2" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"社会3" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"社会4" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"风险性1" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"风险性2" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	"风险性3" [fillcolor=lightgreen fontname="Microsoft YaHei" shape=box style=filled]
+	{
+		rank=same
+	}
+	"有用性" [fillcolor=lightblue fontname="Microsoft YaHei" shape=ellipse style=filled]
+	"易用性" [fillcolor=lightblue fontname="Microsoft YaHei" shape=ellipse style=filled]
+	"风险性" [fillcolor=lightblue fontname="Microsoft YaHei" shape=ellipse style=filled]
+	"社会" [fillcolor=lightblue fontname="Microsoft YaHei" shape=ellipse style=filled]
+	"依赖" [fillcolor=lightblue fontname="Microsoft YaHei" shape=ellipse style=filled]
+	"价值" [fillcolor=lightblue fontname="Microsoft YaHei" shape=ellipse style=filled]
+	"效能" [fillcolor=lightblue fontname="Microsoft YaHei" shape=ellipse style=filled]
+	{
+		rank=same
+	}
+	"接触频率" [fillcolor=lightblue fontname="Microsoft YaHei" shape=ellipse style=filled]
+	"多大可能购买" [fillcolor=lightblue fontname="Microsoft YaHei" shape=ellipse style=filled]
+	"有用性" -> "接触频率"
+	"易用性" -> "接触频率"
+	"风险性" -> "接触频率"
+	"社会" -> "接触频率"
+	"依赖" -> "接触频率"
+	"价值" -> "接触频率"
+	"效能" -> "接触频率"
+	"有用性" -> "有用性1"
+	"有用性" -> "有用性2"
+	"有用性" -> "有用性3"
+	"有用性" -> "有用性4"
+	"易用性" -> "易用性1"
+	"易用性" -> "易用性2"
+	"易用性" -> "易用性3"
+	"风险性" -> "风险性1"
+	"风险性" -> "风险性2"
+	"风险性" -> "风险性3"
+	"社会" -> "社会1"
+	"社会" -> "社会2"
+	"社会" -> "社会3"
+	"社会" -> "社会4"
+	"依赖" -> "依赖1"
+	"依赖" -> "依赖2"
+	"依赖" -> "依赖3"
+	"价值" -> "价值1"
+	"价值" -> "价值2"
+	"价值" -> "价值3"
+	"效能" -> "效能1"
+	"效能" -> "效能2"
+	"效能" -> "效能3"
+	"有用性" -> "多大可能购买"
+	"易用性" -> "多大可能购买"
+	"风险性" -> "多大可能购买"
+	"社会" -> "多大可能购买"
+	"依赖" -> "多大可能购买"
+	"价值" -> "多大可能购买"
+	"效能" -> "多大可能购买"
+	"接触频率" -> "多大可能购买"
+	"依赖" -> "价值"
+	"效能" -> "价值"
+	"依赖" -> "效能"
+	"价值" -> "易用性"
+	"依赖" -> "易用性"
+	"效能" -> "易用性"
+	"价值" -> "有用性"
+	"依赖" -> "有用性"
+	"效能" -> "有用性"
+	"易用性" -> "有用性"
+	"价值" -> "社会"
+	"依赖" -> "社会"
+	"效能" -> "社会"
+	"易用性" -> "社会"
+	"有用性" -> "社会"
+	"风险性" -> "社会"
+	"价值" -> "风险性"
+	"依赖" -> "风险性"
+	"效能" -> "风险性"
+	"易用性" -> "风险性"
+	"有用性" -> "风险性"
+}
