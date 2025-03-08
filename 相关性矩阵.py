@@ -76,7 +76,11 @@ for latent_var, observed_vars in latent_vars_to_observed_vars.items():
     score = np.dot(observed_data, factor_loadings)  # 计算加权得分
     latent_scores[latent_var] = score  # 将得分保存到 DataFrame
 
-# 计算潜变量之间的相关性矩阵
+# 将“多大可能购买”和“接触频率”加入到潜变量得分中
+latent_scores['多大可能购买'] = sheet1_data_standardized['多大可能购买']
+latent_scores['接触频率'] = sheet1_data_standardized['接触频率']
+
+# 计算潜变量以及这两个变量之间的相关性矩阵
 correlation_matrix = latent_scores.corr()
 
 # 输出相关性矩阵
