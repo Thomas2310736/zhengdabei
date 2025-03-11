@@ -9,7 +9,7 @@ from semopy.report import report
 import os
 
 # 读取数据
-file_path = r"C:\Users\thoma\Desktop\副本问卷数据.xlsx"  
+file_path =r"C:\Users\thoma\Desktop\最新全部数据.xlsx"
 sheet1_data = pd.read_excel(file_path, sheet_name='sheet1', header=1)
 
 # 数据预处理
